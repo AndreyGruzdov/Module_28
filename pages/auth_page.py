@@ -22,7 +22,8 @@ class AuthPage(WebPage):
     btn = WebElement(id='kc-login')
     forgot_password = WebElement(xpath = "//*[@id='forgot_password']")
     invalid_login_password =WebElement(xpath = "//*[@id='page-right']/div/div/p")
-    captcha_text= WebElement(xpath="// *[contains(text(), 'Символы')]")
+    incorrect_text = WebElement(xpath=" //*[@id='page-right']/div/div/p")
+    captcha_text = WebElement(xpath="// *[contains(text(), 'Символы')]")
     captcha = WebElement(xpath="//*[@id='captcha']")
 
     register_left = WebElement(id='page-left')
