@@ -19,6 +19,6 @@ def web_browser(request, get_chrome_options):
     driver = webdriver.Chrome(executable_path='C:\SkillFactory\Driver\chromedriver.exe', options=options)
     if request.cls is not None:
         request.cls.driver = driver
-        # driver.delete_all_cookies()
+    driver.delete_all_cookies()
     yield driver
     driver.close()
