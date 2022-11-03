@@ -1,7 +1,7 @@
 #python -m pytest -v --driver Chrome --driver-path chromedriver.exe tests\test_registration.py
 import time
 from pages.auth_page import AuthPage
-from config import valid_email, valid_password, pass_gener
+#from config import valid_email, valid_password, pass_gener
 
 def test_new_user_registration(web_browser):
     page = AuthPage(web_browser)
@@ -18,9 +18,9 @@ def test_new_user_registration(web_browser):
     assert page.register_region.is_presented()
     assert page.register_user_agreement.is_presented()
     assert page.register_logo.is_presented()
-    page.register_first.send_keys('123')
-    page.register_last.send_keys('321')
-    page.register_email.send_keys()
+    # page.register_first.send_keys('123')
+    # page.register_last.send_keys('321')
+    # page.register_email.send_keys()
 
 
     #
