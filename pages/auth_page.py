@@ -38,6 +38,7 @@ class AuthPage(WebPage):
     register_region = WebElement(xpath='//*[@id="page-right"]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/input[1]')
     register_user_agreement = WebElement(xpath='//*[@id="page-right"]/div[1]/div[1]/div[1]/form[1]/div[5]/a[1]')
     register_logo = WebElement(class_name='main-header__logo-container')
+    button_re_entry = WebElement(xpath="// *[ @ id ='page-right'] / div[1] / div[1] / div[1] / form[1] / div[1] / div[1] / div[1] / div[2] / button[1]")
 
     text_recovery = WebElement(xpath="(//*[@id='page-right']/div[1]/div[1]/h1[1])")
     button_continue = WebElement(xpath="//*[@id='reset']")
