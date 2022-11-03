@@ -1,10 +1,5 @@
-#python -m pytest -v --driver Chrome --driver-path chromedriver.exe tests\test_authorization.py
-#py -m pytest -v --driver Chrome --driver-path driver.exe
-#python -m pytest -v --driver Chrome --driver-path C:\Skillfactory\Drivers/chromedriver.exe
-
-import time
 from pages.auth_page import AuthPage
-from config import valid_email, valid_password, valid_pone, login_no_valid, ls_no_valid ,pass_gener, email_gener
+from config import valid_email, valid_password, valid_pone, login_no_valid, ls_no_valid #,pass_gener, email_gener
 
 def test_main_page_all_items(web_browser):
     """Проверка главной страницы"""
