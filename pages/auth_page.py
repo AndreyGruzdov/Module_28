@@ -19,7 +19,7 @@ class AuthPage(WebPage):
     email_input_form = WebElement(xpath="// *[ @ id ='username']")
     password_input_form = WebElement(xpath="// *[ @ id ='password']")
     check_mark = WebElement(xpath="//*[@id='page-right']/div[1]/div[1]/div[1]/form[1]/div[3]/label[1]/span[2]/span[1]")
-    btn = WebElement(id='kc-login')
+    btn = WebElement(xpath="// *[ @ id ='kc-login']")
     forgot_password = WebElement(xpath = "//*[@id='forgot_password']")
     invalid_login_password =WebElement(xpath = "//*[@id='page-right']/div/div/p")
     incorrect_text = WebElement(xpath=" //*[@id='page-right']/div/div/p")

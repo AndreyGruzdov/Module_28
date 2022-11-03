@@ -1,7 +1,7 @@
 valid_email = 'andrej169@yandex.ru'
 valid_password = 'K42mbNVrZBgCsyA'
-valid_pone = '+79522840568'
-
+valid_telephone = '+79522840568'
+no_valid_telephone = '+7*522840568'
 url_rostelecom = 'https://b2c.passport.rt.ru/'
 url_cod = 'https://my.rt.ru/'
 url_email = "https://www.1secmail.com/api/v1/"

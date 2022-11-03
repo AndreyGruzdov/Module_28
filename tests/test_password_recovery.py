@@ -1,5 +1,5 @@
 from pages.auth_page import AuthPage
-from config import valid_pone, pass_gener, email_gener
+from config import valid_telephone, pass_gener, email_gener
 
 
 def test_selection_window(web_browser):
@@ -22,7 +22,7 @@ def test_password_recovery_phone(web_browser):
     """Восстановление пароля по номеру телефона"""
     page = AuthPage(web_browser)
     page.forgot_password.click()
-    page.email_input_form.send_keys(valid_pone)
+    page.email_input_form.send_keys(valid_telephone)
     page.captcha.send_keys(pass_gener())
     page.button_continue.click()
 
