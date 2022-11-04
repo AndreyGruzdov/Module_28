@@ -47,3 +47,17 @@ class AuthPage(WebPage):
     tab_email_trait = WebElement(xpath="(//*[@id='t-btn-tab-mail']/span)")
     text_invalid = WebElement(xpath="(//*[@id='page-right']/div/div/p[1])")
 
+
+    password_no_latin_up = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать только латинские буквы')])[1]")
+    password_no_latin_down= WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать только латинские буквы')])[2]")
+    password_contain_uppercase_up = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы одну заглавную букву')])[1]")
+    password_contain_uppercase_down = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы одну заглавную букву')])[2]	")
+    password_short_up = WebElement(xpath="(// *[contains(text(), 'Длина пароля должна быть не менее 8 символов')])[1]")
+    password_short_down = WebElement(xpath="(// *[contains(text(), 'Длина пароля должна быть не менее 8 символов')])[2]")
+    password_contain_lowercase_up = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы одну прописную букву')])[1]")
+    password_contain_lowercase_down = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы одну прописную букву')])[2]")
+    password_contain_number_up = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы 1 спецсимвол или хотя бы одну цифру')])[1]")
+    password_contain_number_down = WebElement(xpath="(// *[contains(text(), 'Пароль должен содержать хотя бы 1 спецсимвол или хотя бы одну цифру')])[2]")
+    passwords_dont_match = WebElement(xpath="// *[contains(text(), 'Пароли не совпадают')]")
+
+

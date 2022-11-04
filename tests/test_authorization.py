@@ -1,3 +1,4 @@
+#python -m pytest -v --driver Chrome --driver-path /chromedriver.exe tests/test_authorization.py
 from pages.auth_page import AuthPage
 from config import valid_email, valid_password, valid_telephone, no_valid_telephone, login_no_valid, ls_no_valid, pass_gener, email_gener
 

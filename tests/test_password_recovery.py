@@ -1,3 +1,5 @@
+#python -m pytest -v --driver Chrome --driver-path chromedriver.exe tests/test_password_recovery.py
+
 from pages.auth_page import AuthPage
 from config import valid_telephone, pass_gener, email_gener
 
