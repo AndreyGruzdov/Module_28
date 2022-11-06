@@ -1,6 +1,10 @@
 #python -m pytest -v --driver Chrome --driver-path /chromedriver.exe tests/test_authorization.py
+
+
 from pages.auth_page import AuthPage
-from config import valid_email, valid_password, valid_telephone, no_valid_telephone, login_no_valid, ls_no_valid, pass_gener, email_gener
+from pages.auth_code import CodePage
+from config import valid_email, valid_password, valid_telephone, no_valid_telephone, \
+    login_no_valid, ls_no_valid, pass_gener, email_gener, code
 
 def test_main_page_all_items(web_browser):
     """Проверка главной страницы"""
@@ -99,3 +103,22 @@ def test_negative_authorisation_email(web_browser):
         assert page.text_authorization.is_visible()
         assert page.captcha_text.is_visible()
         assert page.text_invalid.is_visible()
+
+
+def test_negative_authorisation_code(web_browser):
+    """Не удачная авторизация по коду на email"""
+    page = CodePage(web_browser)
+
+    assert 'https://b2c.passport.rt.ru/auth/realms/b2c/' in page.get_current_url()
+    assert page.text_authorization_code.is_visible()
+    assert page.text_personal_area.is_visible()
+    page.field_address.send_keys(valid_email)
+    page.button_get_code.click()
+    assert page.code0.is_visible()
+    assert page.code1.is_visible()
+    assert page.code2.is_visible()
+    assert page.code3.is_visible()
+    assert page.code4.is_visible()
+    assert page.code5.is_visible()
+
+
