@@ -61,7 +61,7 @@ def test_registration_user_passwords_dont_meet(web_browser):
     assert page.password_short_down.is_visible()
 
 def test_registration_user_passwords_dont_dont_match(web_browser):
-    """Регистрация нового пользователя пароль не совпадает"""
+    """Регистрация нового пользователя пароли не совпадают"""
     page = AuthPage(web_browser)
     page.register_field.click()
     page.register_first.send_keys(first_name)
