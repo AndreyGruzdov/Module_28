@@ -9,8 +9,9 @@ https://docs.google.com/spreadsheets/d/1JarcfR9yHffVHUICSdtHamj6h07izlCnav0uEwir
 Файл base.py и elements.py использованы без изменения с 
 https://github.com/ptaschka/28-Module_Final.git
 
-Запуск тестов: python -m pytest -v --driver Chrome --driver-path chromedriver.exe tests/... имя файла,
-есть закомментирована строка в верху каждого файла.
+Запуск тестов: python -m pytest -v --driver Chrome --driver-path chromedriver.exe tests/... имя файла.
+Есть закомментирована строка в верху каждого файла.
+
 IDE - PyCharm 2022.1.3
 Версия chromedriver.exe для Google Chrome версия 107.
 
