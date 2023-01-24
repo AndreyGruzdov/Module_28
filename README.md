@@ -4,7 +4,7 @@
 Функциональное тестирование сайта "Ростелеком" https://b2c.passport.rt.ru
 
 Ссылка на тест-кейсы: 
-https://docs.google.com/spreadsheets/d/1JarcfR9yHffVHUICSdtHamj6h07izlCnav0uEwirOCk/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1-RrtbzVfscckiPvQ16fdZWFKNynHbBRJ/edit?usp=sharing&ouid=108023003863712356644&rtpof=true&sd=true
 
 Файл base.py и elements.py использованы без изменения с 
 https://github.com/ptaschka/28-Module_Final.git
